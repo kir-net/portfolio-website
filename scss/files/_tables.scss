@@ -2,6 +2,11 @@
 /*                tables              */
 /* ---------------------------------- */
 
+
+.table-skills {
+    margin:$huge;
+}
+
 th {
     border-bottom: $nano solid $color-table-border;
     padding: $small;

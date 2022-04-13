@@ -59,20 +59,6 @@ svg {
 /* ---------------------------------- */
 /*              page header           */
 /* ---------------------------------- */
-.fb-header {
-  display: flex;
-  width: 100%;
-  height: 4rem;
-  padding: 0.6rem 0.2rem 0.2rem;
-}
-.fb-header .fb-header__item:first-child {
-  margin: 0 auto 0 0.2rem;
-}
-.fb-header .fb-header__item:last-child {
-  text-align: right;
-  margin-right: 0.2rem;
-}
-
 .navigation-list {
   list-style-type: none;
   padding-inline-start: 0;
@@ -168,6 +154,20 @@ button:focus,
 /* ---------------------------------- */
 /*              containers            */
 /* ---------------------------------- */
+.fb-header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  padding: 0.6rem 0.2rem 0.2rem;
+}
+.fb-header .fb-header__item:first-child {
+  margin: 0 auto 0 0.2rem;
+}
+.fb-header .fb-header__item:last-child {
+  text-align: right;
+  margin-right: 0.2rem;
+}
+
 .fb-profile {
   display: flex;
   margin-top: 1rem;
@@ -184,6 +184,20 @@ button:focus,
 .fb-profile .profile__text {
   padding: 2%;
   text-align: center;
+}
+
+.fb-about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.fb-about-me h2 {
+  text-align: center;
+}
+
+.fb-footer__item:hover {
+  transform: rotate(15deg);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 /* ---------------------------------- */
@@ -213,6 +227,10 @@ button:focus,
 /* ---------------------------------- */
 /*                tables              */
 /* ---------------------------------- */
+.table-skills {
+  margin: 2rem;
+}
+
 th {
   border-bottom: 0.05rem solid #357b70;
   padding: 0.6rem;
@@ -254,6 +272,10 @@ footer .fb-footer__item {
 
   html {
     font-size: 18px;
+  }
+
+  .fb-about-me {
+    flex-direction: column;
   }
 }
 @media all and (max-width: 750px) {
