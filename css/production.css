@@ -149,14 +149,11 @@ button {
   border-bottom: 0.2rem solid #bbb6b6;
   transition: 0.2s opacity;
 }
-.button button:hover,
-.button button:focus,
-.button .button:hover,
-.button .button:focus,
-button button:hover,
-button button:focus,
-button .button:hover,
-button .button:focus {
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* turn mouse into hand */
   cursor: pointer;
   opacity: 0.8;

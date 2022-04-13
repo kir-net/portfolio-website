@@ -18,15 +18,15 @@ button {
     border-radius: 3px;
     border-bottom: $tiny solid $color-button-border;
     transition: 0.2s opacity;
+}
 
-    button:hover,
-    button:focus,
-    .button:hover,
-    .button:focus {
-        /* turn mouse into hand */
-        cursor: pointer;
-        opacity: 0.8;
-    }
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* turn mouse into hand */
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .button2 {
