@@ -2,8 +2,49 @@
 /*           media queries            */
 /* ---------------------------------- */
 @media all and (max-width: 400px) {
+
+    html{
+        font-size: 12;
+    }
     .grid {
         grid-template-columns: 1fr;
+    }
+    th {
+        border-bottom: $nano solid $color-table-border;
+        padding: $nano;
+    }
+    
+    td {
+        padding: $nano $nano 0 0;
+    }
+    
+    tr:hover {background-color: $color-highlight-row;}
+    
+    .table-field-center {
+        padding-right: 1em;
+    }
+    
+    .table-field-left {
+        padding-left: 1em;
+        text-align: left;
+    } 
+    .textfield-contact-me{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .fb-about-me {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        h2{
+            text-align: center;
+            margin: $medium $nano;
+        }
+        &__item {
+            margin: $small  $nano;
+            padding: $tiny;
+            @extend %shadow;
+        }
     }
 }
 
@@ -16,8 +57,10 @@
     }
     .fb-about-me{
         flex-direction: column;
-    }   
+    }  
+    
 }
+
 
 @media all and (max-width: 750px) {
     .grid {
@@ -53,13 +96,13 @@
 
 @media all and (min-width: 750px) and (max-width: 900px) {
     html {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 @media all and (min-width: 900px) {
     html {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .fb-footer__item {

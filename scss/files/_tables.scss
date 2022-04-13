@@ -2,10 +2,9 @@
 /*                tables              */
 /* ---------------------------------- */
 
-
-.table-skills {
-    margin:$huge;
-}
+th, td {
+    border-bottom: 1px solid $noble;
+  }
 
 th {
     border-bottom: $nano solid $color-table-border;
@@ -14,5 +13,17 @@ th {
 
 td {
     text-align: right;
-    padding: $small $huge 0 0;
+    padding: $small $small 0 0;
+}
+
+tr:hover {background-color: $color-highlight-row;}
+
+.table-field-center {
+    padding-right: 3em;
+    text-align: right;
+}
+
+.table-field-left {
+    padding-left: 2em;
+    text-align: left;
 }
