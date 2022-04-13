@@ -1,0 +1,64 @@
+/* ---------------------------------- */
+/*            base settings           */
+/* ---------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $color-page;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    line-height: 1.4;
+    color: $color-page-font;
+}
+
+main {
+    padding: $small;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    margin-top: $huge;
+    font-size: $large;
+    font-weight: 550;
+}
+
+a {
+    &:visited {
+        color: $color-link-visited;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $color-link-active;
+    }
+}
+
+.fb-footer__item {
+    &:hover {
+        transform: rotate(15deg);
+        transition: all 0.3s ease-in-out 0s;
+    }
+}
+
+form {
+    text-align: center;
+}
+
+svg {
+    margin: $medium;
+}

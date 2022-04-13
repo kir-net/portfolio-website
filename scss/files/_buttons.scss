@@ -1,0 +1,36 @@
+/* ---------------------------------- */
+/*                buttons             */
+/* ---------------------------------- */
+
+.button,
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    font-size: 0.9rem;
+    /* style button */
+    background-color: $color-button;
+    color: white;
+    text-decoration: none;
+    padding: $small;
+    border-radius: 3px;
+    border-bottom: $tiny solid $color-button-border;
+    transition: 0.2s opacity;
+
+    button:hover,
+    button:focus,
+    .button:hover,
+    .button:focus {
+        /* turn mouse into hand */
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.button2 {
+    background-color: $color-button2;
+    color: $color-button2-font;
+    font-weight: 600;
+}

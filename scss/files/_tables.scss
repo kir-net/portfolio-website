@@ -1,0 +1,13 @@
+/* ---------------------------------- */
+/*                tables              */
+/* ---------------------------------- */
+
+th {
+    border-bottom: $nano solid $color-table-border;
+    padding: $small;
+}
+
+td {
+    text-align: right;
+    padding: $small $huge 0 0;
+}

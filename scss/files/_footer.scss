@@ -1,0 +1,19 @@
+/* ---------------------------------- */
+/*              page footer           */
+/* ---------------------------------- */
+
+footer {
+    text-align: center;
+    margin-top: $large;
+
+    .fb-footer {
+        display: flex;
+        width: 100%;
+    }
+
+    .fb-footer__item {
+        width: $huge;
+        margin: $medium;
+    }
+}
+

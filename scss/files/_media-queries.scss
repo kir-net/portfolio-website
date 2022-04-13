@@ -1,0 +1,65 @@
+/* ---------------------------------- */
+/*           media queries            */
+/* ---------------------------------- */
+@media all and (max-width: 400px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    html {
+        font-size: 18px;
+    }   
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: $small;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .fb-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile__portrait {
+        width: 60%;
+    }
+
+    h2,
+    footer {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 750px) {
+    .fb-profile {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media all and (min-width: 750px) and (max-width: 900px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width: 900px) {
+    html {
+        font-size: 24px;
+    }
+
+    .fb-footer__item {
+        width: 5%;
+    }
+}

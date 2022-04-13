@@ -1,0 +1,23 @@
+/* ---------------------------------- */
+/*              containers            */
+/* ---------------------------------- */
+
+.fb-profile {
+    display: flex;
+    margin-top: $medium;
+    width: 90%;
+    margin: 5%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+    .profile__portrait {
+        border-radius: 50%;
+        flex-grow: 0;
+    }
+
+    .profile__text {
+        padding: 2%;
+        text-align: center;
+    }
+}
