@@ -9,6 +9,7 @@ html {
     font-size: 16px;
 }
 
+
 body {
     background-color: $color-page;
     font-family: "Spectral", serif;
@@ -19,6 +20,8 @@ body {
 
 main {
     padding: $small;
+    margin-top: 70px;
+    margin-bottom: 150px;
 }
 
 h1 {
@@ -60,8 +63,6 @@ ul li{
     width: 50%;
     margin-left: 25%;
     text-align: center;
-    
-
 }
 
 form {
@@ -70,4 +71,8 @@ form {
 
 svg {
     margin: 0 20%;
+}
+
+.textfield-contact-me {
+    margin-top: 60px;;
 }

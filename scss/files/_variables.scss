@@ -25,7 +25,7 @@ $color-link-active:   $pacific-blue;
 $color-page:          $anakiwa;
 $color-page-font:     $ebony-clay;
 $color-table-border:  $oracle;
-$color-shadow-face:   lighten($anakiwa, 4%);
+$color-shadow-face:   lighten($anakiwa, 5%);
 $color-highlight-row: lighten($anakiwa, 10%);
 
 
@@ -44,5 +44,4 @@ $huge:    2.0rem;
     background-color: $color-shadow-face;
     margin: $small;
     padding: $small;
-    text-align: center;
 }

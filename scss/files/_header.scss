@@ -2,7 +2,14 @@
 /*              page header           */
 /* ---------------------------------- */
 
-
+header {
+    position: fixed;
+    width: 100%;
+    background: $color-shadow-face;
+    top: 0px;
+    text-align: center;
+    border-bottom: $nano solid $noble;
+}
 
 .navigation-list {
     list-style-type: none;

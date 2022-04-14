@@ -12,13 +12,13 @@
     th {
         border-bottom: $nano solid $color-table-border;
         padding: $nano;
-    }
-    
+    }   
     td {
         padding: $nano $nano 0 0;
+    }   
+    tr:hover {
+        background-color: $color-highlight-row;
     }
-    
-    tr:hover {background-color: $color-highlight-row;}
     
     .table-field-center {
         padding-right: 1em;
@@ -32,18 +32,19 @@
         width: 90%;
         margin-left: 5%;
     }
-    .fb-about-me {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        h2{
-            text-align: center;
+    .fb-about-me { 
+            
+        h2{         
             margin: $medium $nano;
         }
         &__item {
+            
             margin: $small  $nano;
-            padding: $tiny;
-            @extend %shadow;
+            padding: $small;
+            &-child {
+                width: 94%;
+                margin-left: 3%;
+            }
         }
     }
 }
@@ -54,11 +55,17 @@
     }
     html {
         font-size: 18px;
-    }
-    .fb-about-me{
-        flex-direction: column;
+    } 
+    .fb-about-me { 
+        &__item {           
+            margin: $small  $nano;
+            padding: $small;
+            &-child {
+                width: 94%;
+                margin-left: 3%;
+            }
+        }
     }  
-    
 }
 
 
@@ -85,6 +92,8 @@
     footer {
         text-align: center;
     }
+      
+    
 }
 
 @media all and (min-width: 750px) {
@@ -99,6 +108,21 @@
         font-size: 20px;
     }
 }
+
+@media all and (max-width: 900px) {
+    .fb-about-me {
+        display: flex;
+        flex-wrap: wrap;
+        h2{
+            text-align: center;
+        }
+        &__item {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
 
 @media all and (min-width: 900px) {
     html {

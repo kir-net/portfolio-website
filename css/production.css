@@ -1,9 +1,8 @@
 .fb-about-me__item, .fb-profile .profile__text, .textfield-contact-me {
   box-shadow: inset 0 0 5px 7px rgba(252, 255, 173, 0.3);
-  background-color: #bbdffd;
+  background-color: #c0e2fe;
   margin: 0.6rem;
   padding: 0.6rem;
-  text-align: center;
 }
 
 /* ---------------------------------- */
@@ -27,6 +26,8 @@ body {
 
 main {
   padding: 0.6rem;
+  margin-top: 70px;
+  margin-bottom: 150px;
 }
 
 h1 {
@@ -70,9 +71,22 @@ svg {
   margin: 0 20%;
 }
 
+.textfield-contact-me {
+  margin-top: 60px;
+}
+
 /* ---------------------------------- */
 /*              page header           */
 /* ---------------------------------- */
+header {
+  position: fixed;
+  width: 100%;
+  background: #c0e2fe;
+  top: 0px;
+  text-align: center;
+  border-bottom: 0.05rem solid #bbb6b6;
+}
+
 .navigation-list {
   list-style-type: none;
   padding-inline-start: 0;
@@ -179,7 +193,7 @@ button:focus,
   display: flex;
   width: 100%;
   height: 4rem;
-  padding: 0.6rem 0.2rem 0.2rem;
+  padding: 0.6rem 0.2rem;
 }
 .fb-header .fb-header__item:first-child {
   margin: 0 auto 0 0.2rem;
@@ -201,6 +215,7 @@ button:focus,
 .fb-profile .profile__portrait {
   border-radius: 50%;
   flex-grow: 0;
+  margin: 1rem;
 }
 .fb-about-me {
   display: flex;
@@ -214,6 +229,12 @@ button:focus,
 .fb-about-me__item {
   margin: 1rem;
   padding: 1.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+.fb-about-me__item-child {
+  width: 80%;
+  margin-left: 10%;
 }
 
 .fb-footer__item:hover {
@@ -280,8 +301,15 @@ tr:hover {
 /*              page footer           */
 /* ---------------------------------- */
 footer {
+  position: fixed;
+  width: 100%;
+  background: #c0e2fe;
+  bottom: 0px;
   text-align: center;
-  margin-top: 1.5rem;
+  border-top: 0.05rem solid #bbb6b6;
+}
+footer p {
+  margin: 0.6rem 0 0;
 }
 footer .fb-footer {
   display: flex;
@@ -331,18 +359,16 @@ footer .fb-footer__item {
     margin-left: 5%;
   }
 
-  .fb-about-me {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
   .fb-about-me h2 {
-    text-align: center;
     margin: 1rem 0.05rem;
   }
   .fb-about-me__item {
     margin: 0.6rem 0.05rem;
-    padding: 0.2rem;
+    padding: 0.6rem;
+  }
+  .fb-about-me__item-child {
+    width: 94%;
+    margin-left: 3%;
   }
 }
 @media all and (min-width: 400px) and (max-width: 750px) {
@@ -354,8 +380,13 @@ footer .fb-footer__item {
     font-size: 18px;
   }
 
-  .fb-about-me {
-    flex-direction: column;
+  .fb-about-me__item {
+    margin: 0.6rem 0.05rem;
+    padding: 0.6rem;
+  }
+  .fb-about-me__item-child {
+    width: 94%;
+    margin-left: 3%;
   }
 }
 @media all and (max-width: 750px) {
@@ -391,6 +422,18 @@ footer {
 @media all and (min-width: 750px) and (max-width: 900px) {
   html {
     font-size: 20px;
+  }
+}
+@media all and (max-width: 900px) {
+  .fb-about-me {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fb-about-me h2 {
+    text-align: center;
+  }
+  .fb-about-me__item {
+    font-size: 0.9rem;
   }
 }
 @media all and (min-width: 900px) {

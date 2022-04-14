@@ -2,9 +2,18 @@
 /*              page footer           */
 /* ---------------------------------- */
 
+
 footer {
+    position: fixed;
+    width: 100%;
+    background: $color-shadow-face;
+    bottom: 0px;
     text-align: center;
-    margin-top: $large;
+    border-top: $nano solid $noble;
+    p {
+        margin: $small 0 0;
+    }
+
 
     .fb-footer {
         display: flex;
@@ -16,4 +25,3 @@ footer {
         margin: $medium;
     }
 }
-
