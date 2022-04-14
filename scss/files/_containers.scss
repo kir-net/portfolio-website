@@ -22,19 +22,18 @@
 .fb-profile {
     display: flex;
     margin-top: $medium;
-    width: 90%;
-    margin: 5%;
+    width: 100%;  
     height: auto;
     align-items: center;
     justify-content: center;
-
+    &__item {
+        flex-grow: 1;
+        margin: 7%;
+    }
     .profile__portrait {
         border-radius: 50%;
-        flex-grow: 0;
-        margin: $medium;
     }
-
-    .profile__text {
+    .profile__text {        
         @extend %shadow;
     }
 }
@@ -59,8 +58,6 @@
         }
     }
 }
-
-
 
 .fb-footer__item {
     &:hover {
