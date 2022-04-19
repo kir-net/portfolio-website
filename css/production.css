@@ -51,6 +51,10 @@ a:active {
   color: #03acc3;
 }
 
+p {
+  font-size: 1rem;
+}
+
 ul li {
   list-style-type: circle;
   text-align: left;

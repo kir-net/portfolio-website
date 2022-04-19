@@ -9,7 +9,6 @@ html {
     font-size: 16px;
 }
 
-
 body {
     background-color: $color-page;
     font-family: "Spectral", serif;
@@ -49,6 +48,10 @@ a {
     &:active {
         color: $color-link-active;
     }
+}
+
+p {
+    font-size: 1rem;
 }
 
 ul li{
