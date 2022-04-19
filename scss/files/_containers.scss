@@ -5,11 +5,13 @@
 
 .fb-header {
     display: flex;
+    align-items: start;
     width: 100%;
-    height: 4rem;
+
     padding: $small $tiny ;
 
     .fb-header__item:first-child {
+        height: 60px;
         margin: 0 auto 0 $tiny;
     }
 
@@ -21,6 +23,7 @@
 
 .fb-profile {
     display: flex;
+    align-items: start;
     margin-top: $medium;
     width: 100%;  
     height: auto;

@@ -195,11 +195,12 @@ button:focus,
 /* ---------------------------------- */
 .fb-header {
   display: flex;
+  align-items: start;
   width: 100%;
-  height: 4rem;
   padding: 0.6rem 0.2rem;
 }
 .fb-header .fb-header__item:first-child {
+  height: 60px;
   margin: 0 auto 0 0.2rem;
 }
 .fb-header .fb-header__item:last-child {
@@ -209,6 +210,7 @@ button:focus,
 
 .fb-profile {
   display: flex;
+  align-items: start;
   margin-top: 1rem;
   width: 100%;
   height: auto;
