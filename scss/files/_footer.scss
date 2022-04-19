@@ -4,16 +4,13 @@
 
 
 footer {
-    position: fixed;
-    width: 100%;
-    background: $color-shadow-face;
-    bottom: 0px;
+
+ 
     text-align: center;
-    border-top: $nano solid $noble;
+
     p {
         margin: $small 0 0;
     }
-
 
     .fb-footer {
         display: flex;
