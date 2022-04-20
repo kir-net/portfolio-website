@@ -103,6 +103,12 @@
     .fb-profile {
         flex-direction: row;
         align-items: center;
+        .profile__portrait {
+            margin-left: 15%;
+        }
+        .profile__text {
+            margin-right: 15%;
+        }
     }
 }
 
@@ -131,5 +137,5 @@
     html {
         font-size: 22px;
     }
-
+    
 }

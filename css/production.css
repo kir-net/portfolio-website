@@ -415,6 +415,12 @@ footer .fb-footer__item {
     flex-direction: row;
     align-items: center;
   }
+  .fb-profile .profile__portrait {
+    margin-left: 15%;
+  }
+  .fb-profile .profile__text {
+    margin-right: 15%;
+  }
 }
 @media all and (min-width: 750px) and (max-width: 900px) {
   html {
