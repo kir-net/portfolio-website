@@ -1,23 +1,30 @@
 /* ---------------------------------- */
 /*              page footer           */
 /* ---------------------------------- */
-
+ 
 
 footer {
-
+    color: $color-footer-font;
     text-align: center;
-
+    background-color: $black;
+    
     p {
-        margin: $small 0 0;
+        margin: $medium 0 0;
+        padding: $small 0 0;
+        background-color: $black;
     } 
 
     .fb-footer {
         display: flex;
         width: 100%;
+        
     }
 
     .fb-footer__item {
         width: $huge;
         margin: $medium;
+        &:hover {
+            transform: rotate(15deg);
+        }
     }
 }

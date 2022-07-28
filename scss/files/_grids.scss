@@ -10,10 +10,12 @@
     
 .grid__item {
     background-color: $color-grid;
+    background-color: $color-transparent-background;
 
     h2,
     p {
-        margin: $small;
+        margin: $tiny;
+        font-family: "Podkova", serif;
     }        
 }
 

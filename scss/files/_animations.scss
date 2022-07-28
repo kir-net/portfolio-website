@@ -1,6 +1,65 @@
+
 /* ---------------------------------- */
 /*              animations            */
 /* ---------------------------------- */
+.textlogo {
+    font-family: "Podkova", serif;
+    font-weight: 550;
+    text-align: left;
+    font-size: 2rem;
+    color: transparent;
+    width: 8rem;
+    padding-top: 0.12rem;
+    padding-left: 1.2rem;
+
+    border-bottom: 0.2rem #1677fe dashed;
+    border-left: 0.2rem #1677fe dashed;
+    border-radius: 50%;
+    text-decoration: none;
+    animation: glow 12s ease-in-out infinite alternate;
+}
+  
+.textlogo:hover {
+
+
+}
+
+@keyframes glow {
+0% {
+    color: #1677fe;
+}
+5% {
+    color: #1677fe;
+}
+17.6% {
+    color: white;
+}
+28.3% {
+    color: #fede51;
+}
+38.3% {
+    color: #fede51;
+}
+50% {
+    color: white;
+}
+61.6% {
+    color: red;
+}
+71.6% {
+    color: red;
+}
+83.3% {
+    color: white;
+}
+95% {
+    color: rgb(55, 254, 0);
+}
+100% {
+    color: rgb(55, 254, 0);
+}
+}
+  
 
 .sun {
     animation: 4s color-change infinite alternate linear;

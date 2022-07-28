@@ -4,11 +4,8 @@
 
 header {
     position: fixed;
-    width: 100%;
-    background: $color-shadow-face;
     top: 0px;
-    text-align: center;
-    border-bottom: $nano solid $noble;
+    background: $black;
 }
 
 .navigation-list {
@@ -16,10 +13,16 @@ header {
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    
 
     li {
         display: inline-block;
         margin-left: $small;
+        
+    }
+
+    .navigation-list__item{
+        color: $color-header-font;
     }
 
     .navigation-list__item--active {

@@ -7,13 +7,11 @@
     display: flex;
     align-items: start;
     width: 100%;
-    padding: $small $tiny ;
-
+    padding: $medium $tiny ;
     .fb-header__item:first-child {
         height: 60px;
         margin: 0 auto 0 $tiny;
     }
-
     .fb-header__item:last-child {
         text-align: right;
         margin-right: $tiny;
@@ -22,6 +20,7 @@
 
 .fb-profile {
     display: flex;
+    flex-direction: column;
     align-items: start;
     margin-top: $medium;
     width: 100%;  
@@ -30,10 +29,12 @@
     justify-content: center;
     &__item {
         flex-grow: 1;
-        margin: 7%;
+        margin: 5%;
+        text-align: center;
     }
     .profile__portrait {
         border-radius: 50%;
+        max-width: 300px;
     }
     .profile__text {        
         @extend %shadow;
@@ -58,12 +59,5 @@
             width: 80%;
             margin-left: 10%;
         }
-    }
-}
-
-.fb-footer__item {
-    &:hover {
-        transform: rotate(15deg);
-        transition: all 0.3s ease-in-out 0s;
     }
 }

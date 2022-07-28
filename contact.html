@@ -4,71 +4,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Janette Doeson</title>
-    <link rel="shortcut icon" href="img/aliasicon_32x32.png">
+    <title>Contact Kirsten Netter</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
     <!-- css reset -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- link google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Podkova" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/production.css">
 </head>
 
 <body>
-    <header class="fb-header">
-        <img src="img/aliasicon_130.jpg" alt="logo" class="fb-header__item">
-
-        <nav class="main-navigation fb-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list__item ">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h1>Leave your contact information here:</h1>
-            <form action="#" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail (required): </label><br>
-                <input type="email" id="contact-email" required><br><br>
-
-                <label class="standard-label" for="contact-tel">Phone: </label><br>
-                <input type="tel" id="contact-tel"><br><br>
-
-                <label class="standard-label" for="message">Message (required; up to 240 characters): </label><br>
-                <textarea maxlength="240" id="message" required></textarea><br><br>
-
-                <input class="button" type="submit" value="Send message">
-            </form>
-        
-            <div class="textfield-contact-me">
-                <h2>Or contact me:</h2>
-                <p>
-                    janette.doeson@fancymail.com<br>
-                    <a href="phone:+491234567">Telephone: +49 1234567</a><br>
-                    <a href="mailto:janette.doeson@fancymail.com">Contact me</a>
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Find me on</p>
-        <a target="_blank" href="https://github.com/kir-net/portfolio-website"> <img src="img/github_icon.svg"   alt="github"    class="fb-footer__item"></a>
-    </footer>
-
+    <div class="main-background">
+        <header class="fb-header">
+            <p class="textlogo fb-header__item" alt="logo"> 
+                kirnet
+            </p>
+    
+            <nav class="main-navigation fb-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem"
+                            class="navigation-list__item ">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="main-frame">
+            <main>
+               
+                <div class="canvas textblock textfield-contact-me">
+                    <p class="huge-letter">?</p>
+                    <h2>Questions?<br> Please <a href="mailto:janette.doeson@fancymail.com">send me an email.</a></h2>
+                   
+                </div>
+            </main>
+                   
+        </div>
+        <footer>
+            <div>
+                <p>Or find me on</p>
+                <a 
+                    target="_blank" 
+                    href="https://github.com/kir-net/portfolio-website"> 
+                    <img 
+                        src="img/github_icon_white.svg"
+                        alt="github" 
+                        class="fb-footer__item"
+                    >
+                </a>
+            </div>             
+        </footer>      
+    </div>   
     <script src=" js/tota11y.min.js"></script>
 </body>
 
