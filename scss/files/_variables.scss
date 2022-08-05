@@ -26,9 +26,10 @@ $color-button-border: $noble;
 $color-button2:       $sulu;
 $color-button2-font:  $ebony-clay;
 $color-grid:          $ivory;
-$color-link-visited:  $blue;
+$color-navlink-visited:  $blue;
+$color-navlink-active: $anakiwa;
+$color-navlink-hover: lighten($black, 10%);
 $color-header-font:   $dodger-blue;
-$color-link-active:   $pacific-blue;
 $color-page:          $linen;
 $color-page-font:     $ebony-clay;
 $color-table-border:  $oracle;
@@ -37,6 +38,7 @@ $color-shadow-face:   lighten($san-juan, 55%);
 $color-highlight-row: lighten($san-juan, 75%);
 $color-transparent-background:  rgba(255,255,242,0.8);
 $color-transparent-titlebackground:  rgba(0,0,0,0.2);
+
 
 // Margins
 $nano:   0.05rem;

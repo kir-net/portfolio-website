@@ -56,7 +56,7 @@ h2 {
 
 a {
     &:visited {
-        color: $color-link-visited;
+        color: $color-navlink-visited;
     }
 
     &:hover,
@@ -65,7 +65,7 @@ a {
     }
 
     &:active {
-        color: $color-link-active;
+        color: $color-navlink-active;
     }
 }
 

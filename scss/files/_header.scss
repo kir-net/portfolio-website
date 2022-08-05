@@ -17,15 +17,22 @@ header {
 
     li {
         display: inline-block;
-        margin-left: $small;
-        
+        margin-left: $small;  
+        &:hover {
+            box-shadow: 0 0 5px 1px $color-transparent-background;
+            background-color: $color-navlink-hover;
+        }     
     }
 
     .navigation-list__item{
         color: $color-header-font;
+        text-decoration: none;
+        padding: $nano $tiny;
     }
 
     .navigation-list__item--active {
         text-decoration: none;
+        color: $color-navlink-active;
+
     }
 }

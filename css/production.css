@@ -68,7 +68,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 a:active {
-  color: #03acc3;
+  color: #a7d6fd;
 }
 
 p {
@@ -138,11 +138,18 @@ header {
   display: inline-block;
   margin-left: 0.6rem;
 }
+.navigation-list li:hover {
+  box-shadow: 0 0 5px 1px rgba(255, 255, 242, 0.8);
+  background-color: #1a1a1a;
+}
 .navigation-list .navigation-list__item {
   color: #1677fe;
+  text-decoration: none;
+  padding: 0.05rem 0.2rem;
 }
 .navigation-list .navigation-list__item--active {
   text-decoration: none;
+  color: #a7d6fd;
 }
 
 /* ---------------------------------- */
