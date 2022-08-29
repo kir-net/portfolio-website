@@ -168,38 +168,47 @@ header {
   border-left: 0.2rem #1677fe dashed;
   border-radius: 50%;
   text-decoration: none;
-  animation: glow 12s ease-in-out infinite alternate;
+  animation: glow 12s ease-in-out infinite;
 }
 
 @keyframes glow {
   0% {
-    color: #1677fe;
+    color: rgb(55, 254, 0);
   }
-  5% {
-    color: #1677fe;
+  7% {
+    color: rgb(55, 254, 0);
   }
-  17.6% {
+  12.5% {
     color: white;
   }
-  28.3% {
-    color: #fede51;
-  }
-  38.3% {
-    color: #fede51;
-  }
-  50% {
-    color: white;
-  }
-  61.6% {
+  18% {
     color: red;
   }
-  71.6% {
+  32% {
     color: red;
   }
-  83.3% {
+  37.5% {
     color: white;
   }
-  95% {
+  43% {
+    color: #fede51;
+  }
+  57% {
+    color: #fede51;
+  }
+  62.5% {
+    color: white;
+  }
+  68% {
+    color: #1677fe;
+  }
+  82% {
+    color: #1677fe;
+  }
+  87.5% {
+    color: white;
+  }
+  93% {
     color: rgb(55, 254, 0);
   }
   100% {
@@ -362,13 +371,6 @@ button:focus,
 .grid__item p {
   margin: 0.2rem;
   font-family: "Podkova", serif;
-}
-
-.grid__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
 }
 
 /* ---------------------------------- */
