@@ -8,22 +8,22 @@ th, td {
 
 th {
     border-bottom: $nano solid $color-table-border;
-    padding: $small;
+    padding: $nano;
 }
 
 td {
     text-align: right;
-    padding: $small $small 0 0;
+    padding: $tiny $nano 0 0;
 }
 
 tr:hover {background-color: $color-highlight-row;}
 
 .table-field-center {
-    padding-right: 3em;
+    padding-right: 4em;
     text-align: right;
 }
 
 .table-field-left {
-    padding-left: 2em;
+    padding-left: 1em;
     text-align: left;
 }
