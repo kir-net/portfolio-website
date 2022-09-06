@@ -16,7 +16,7 @@
         text-align: right;
         margin-right: $tiny;
     }
-} 
+}  
 
 .fb-profile {
     display: flex;
@@ -28,7 +28,7 @@
     justify-content: center;
     &__item {
         flex-grow: 1;
-        margin: 5%;
+        margin: 3%;
         text-align: center;
     }
     .profile__portrait {
@@ -37,6 +37,7 @@
     }
     .profile__text {        
         @extend %shadow;
+        max-height: 300px;
     }
 }
 
@@ -44,13 +45,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    font-size: smaller;
     h2{
         text-align: center;
         margin-top: 0;
     }
     &__item {
-        margin: 80px $medium 50px;
-        padding: $medium $small;
+        margin: 20px $medium;
+        padding: $medium;
         flex-grow: 1;
         text-align: center;
         @extend %shadow;
