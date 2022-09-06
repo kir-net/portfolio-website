@@ -20,11 +20,18 @@ footer {
         
     }
 
-    .fb-footer__item {
+    .fb-footer__leftitem {
         width: $huge;
         margin: $medium;
         &:hover {
             transform: rotate(15deg);
+        }
+    }
+    .fb-footer__rightitem {
+        width: $huge;
+        margin: $medium;
+        &:hover {
+            transform: rotate(-15deg);
         }
     }
 }

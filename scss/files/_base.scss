@@ -13,7 +13,6 @@
     background: 
         url(../img/canvas.jpg);
         background-size: 600px;
-
 }
 
 .main-frame{
@@ -36,7 +35,7 @@ body {
 main {
     padding: $small;
     margin-top: 70px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -55,6 +54,7 @@ h2 {
 }
 
 a {
+    text-decoration:none;
     &:visited {
         color: $color-navlink-visited;
     }
@@ -62,12 +62,14 @@ a {
     &:hover,
     &:focus {
         text-decoration: none;
+        color: $dodger-blue;
     }
 
     &:active {
-        color: $color-navlink-active;
+        color: $color-navlink-visited;
     }
 }
+
 
 p {
     font-size: 1rem;

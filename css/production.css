@@ -4,8 +4,8 @@
 }
 
 .textblock {
-  margin: 0.6rem;
-  padding: 0.6rem;
+  margin: 0.2rem;
+  padding: 0.4rem;
 }
 
 /* ---------------------------------- */
@@ -44,7 +44,7 @@ body {
 main {
   padding: 0.6rem;
   margin-top: 70px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 h1 {
@@ -61,14 +61,18 @@ h2 {
   font-weight: 550;
 }
 
+a {
+  text-decoration: none;
+}
 a:visited {
   color: #3d05f7;
 }
 a:hover, a:focus {
   text-decoration: none;
+  color: #1677fe;
 }
 a:active {
-  color: #a7d6fd;
+  color: #3d05f7;
 }
 
 p {
@@ -76,7 +80,7 @@ p {
 }
 
 .textblock {
-  background-color: rgba(255, 255, 242, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 ul li {
@@ -136,7 +140,7 @@ header {
   margin-left: 0.6rem;
 }
 .navigation-list li:hover {
-  box-shadow: 0 0 5px 1px rgba(255, 255, 242, 0.8);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.85);
   background-color: #1a1a1a;
 }
 .navigation-list .navigation-list__item {
@@ -316,7 +320,6 @@ button:focus,
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 1rem;
   width: 100%;
   height: auto;
   align-items: center;
@@ -341,14 +344,14 @@ button:focus,
   margin-top: 0;
 }
 .fb-about-me__item {
-  margin: 1rem;
-  padding: 1.5rem;
+  margin: 80px 1rem 50px;
+  padding: 1rem 0.6rem;
   flex-grow: 1;
   text-align: center;
 }
 .fb-about-me__item-child {
-  width: 90%;
-  margin-left: 5%;
+  width: 95%;
+  margin-left: 2.55%;
 }
 
 /* ---------------------------------- */
@@ -357,12 +360,13 @@ button:focus,
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0.6rem;
 }
 
 .grid__item {
+  width: 280px;
+  margin-top: 1rem;
   background-color: rgb(255, 255, 242);
-  background-color: rgba(255, 255, 242, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 .grid__item h2,
 .grid__item p {
@@ -372,8 +376,10 @@ button:focus,
 
 .grid2 {
   display: grid;
+  max-width: 948px;
   grid-template-columns: 1fr;
   grid-gap: 0.6rem;
+  margin-top: 1rem;
 }
 
 .tools {
@@ -419,6 +425,7 @@ button:focus,
 .tools-list-item {
   color: #ffb833;
   display: inline;
+  min-width: 150px;
   margin: 5px;
   border-radius: 8px 5px;
   border-left: 1px solid white;
@@ -480,12 +487,19 @@ footer .fb-footer {
   display: flex;
   width: 100%;
 }
-footer .fb-footer__item {
+footer .fb-footer__leftitem {
   width: 2rem;
   margin: 1rem;
 }
-footer .fb-footer__item:hover {
+footer .fb-footer__leftitem:hover {
   transform: rotate(15deg);
+}
+footer .fb-footer__rightitem {
+  width: 2rem;
+  margin: 1rem;
+}
+footer .fb-footer__rightitem:hover {
+  transform: rotate(-15deg);
 }
 
 /* ---------------------------------- */
@@ -541,7 +555,7 @@ footer .fb-footer__item:hover {
 }
 @media all and (min-width: 400px) and (max-width: 750px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   html {
@@ -589,6 +603,14 @@ footer .fb-footer__item:hover {
   }
 }
 @media all and (min-width: 750px) and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
   html {
     font-size: 20px;
   }

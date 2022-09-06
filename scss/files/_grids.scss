@@ -5,10 +5,12 @@
 .grid { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: $small;
+    
 }
     
 .grid__item {
+    width: 280px;
+    margin-top: $medium;
     background-color: $color-grid;
     background-color: $color-transparent-background;
 
@@ -21,8 +23,10 @@
 
 .grid2 { 
     display: grid;
+    max-width: 948px;
     grid-template-columns: 1fr;
     grid-gap: $small;
+    margin-top: $medium;
 }
 
 .tools{
@@ -68,6 +72,7 @@
 .tools-list-item{
     color: $color-h1;
     display: inline;
+    min-width: 150px;
     margin: 5px;
     border-radius: 8px 5px;
     border-left: 1px solid white;

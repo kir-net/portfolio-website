@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: $medium;
     width: 100%;  
     height: auto;
     align-items: center;
@@ -50,14 +49,16 @@
         margin-top: 0;
     }
     &__item {
-        margin: $medium;
-        padding: $large;
+        margin: 80px $medium 50px;
+        padding: $medium $small;
         flex-grow: 1;
         text-align: center;
         @extend %shadow;
         &-child {
-            width: 90%;
-            margin-left: 5%;
+            width: 95%;
+            margin-left: 2.55%;
         }
     }
 }
+
+

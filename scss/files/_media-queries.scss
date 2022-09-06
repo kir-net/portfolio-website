@@ -59,7 +59,7 @@
 
 @media all and (min-width: 400px) and (max-width: 750px) {
     .grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     html {
@@ -113,6 +113,16 @@
 }
 
 @media all and (min-width: 750px) and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid2 { 
+
+        grid-template-columns: 1fr;
+
+    }
+
     html {
         font-size: 20px;
     }

@@ -36,7 +36,8 @@ $color-table-border:  $oracle;
 $color-footer-font:   $ivory;
 $color-shadow-face:   lighten($san-juan, 55%);
 $color-highlight-row: lighten($san-juan, 75%);
-$color-transparent-background:  rgba(255,255,242,0.8);
+
+$color-transparent-background:  rgba(255, 255, 255, 0.85);
 $color-transparent-titlebackground:  rgba(0,0,0,0.2);
 
 
@@ -54,6 +55,6 @@ $huge:    2.0rem;
     border-radius: 2px;   
 }
 %textblock{
-    margin: $small;
-    padding: $small;
+    margin: $tiny;
+    padding: 0.4rem;
 }
