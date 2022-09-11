@@ -1,6 +1,6 @@
 .fb-about-me__item, .fb-profile .profile__text, .textfield-contact-me, .textblock {
   box-shadow: 1px -1px 5px 2px black;
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .textblock {
