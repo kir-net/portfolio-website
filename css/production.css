@@ -19,6 +19,10 @@
   background: url(../img/green_wall.jpg);
 }
 
+.main-navigation {
+  margin-top: 10px;
+}
+
 .h1-main-page {
   font-size: 42px;
   margin-bottom: 50px;
@@ -377,7 +381,6 @@ button:focus,
 }
 
 .grid__item {
-  width: 280px;
   margin-top: 1rem;
   background-color: rgb(255, 255, 242);
   background-color: rgba(255, 255, 255, 0.85);
@@ -390,7 +393,6 @@ button:focus,
 
 .grid2 {
   display: grid;
-  max-width: 948px;
   grid-template-columns: 1fr;
   grid-gap: 0.6rem;
   margin-top: 1rem;

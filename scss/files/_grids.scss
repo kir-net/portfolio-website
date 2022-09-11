@@ -9,7 +9,7 @@
 }
     
 .grid__item {
-    width: 280px;
+    
     margin-top: $medium;
     background-color: $color-grid;
     background-color: $color-transparent-background;
@@ -23,7 +23,7 @@
 
 .grid2 { 
     display: grid;
-    max-width: 948px;
+   
     grid-template-columns: 1fr;
     grid-gap: $small;
     margin-top: $medium;
