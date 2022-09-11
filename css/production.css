@@ -19,7 +19,13 @@
   background: url(../img/green_wall.jpg);
 }
 
+.h1-main-page {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
 .canvas {
+  padding: 40px;
   background: url(../img/canvas.jpg);
   background-size: 600px;
 }
@@ -114,8 +120,14 @@ svg {
   box-shadow: 1px -1px 5px 2px black;
 }
 
+.large-icon {
+  font-size: 36px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 .huge-letter {
-  font-size: 128px;
+  font-size: 100px;
   font-weight: 900;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -263,17 +275,17 @@ header {
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  display: inline-block;
+  display: flex;
+  margin: 0px auto;
   /* takes the font from the outer container */
   font-family: inherit;
   font-size: 0.9rem;
   /* style button */
-  background-color: #357b70;
-  color: white;
+  background-color: #24283c;
+  color: linen;
   text-decoration: none;
   padding: 0.6rem;
-  border-radius: 3px;
-  border-bottom: 0.2rem solid #bbb6b6;
+  border-radius: 10%;
   transition: 0.2s opacity;
 }
 
@@ -283,13 +295,9 @@ button:focus,
 .button:focus {
   /* turn mouse into hand */
   cursor: pointer;
-  opacity: 0.8;
-}
-
-.button2 {
-  background-color: #b5f468;
+  box-shadow: 1px -1px 2px 1px black;
+  background-color: linen;
   color: #24283c;
-  font-weight: 600;
 }
 
 .button-center {

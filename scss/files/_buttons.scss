@@ -6,17 +6,17 @@
 button {
     /* overwrites browser defaults and resets the border */
     border: none;
-    display: inline-block;
+    display: flex;
+    margin: 0px auto;
     /* takes the font from the outer container */
     font-family: inherit;
     font-size: 0.9rem;
     /* style button */
     background-color: $color-button;
-    color: white;
+    color: $color-button-font;
     text-decoration: none;
     padding: $small;
-    border-radius: 3px;
-    border-bottom: $tiny solid $color-button-border;
+    border-radius: 10%;
     transition: 0.2s opacity;
 }
 
@@ -26,14 +26,11 @@ button:focus,
 .button:focus {
     /* turn mouse into hand */
     cursor: pointer;
-    opacity: 0.8;
+    box-shadow: 1px -1px 2px 1px black;
+    background-color: $color-button-hover;
+    color: $color-button-font-hover;
 }
 
-.button2 {
-    background-color: $color-button2;
-    color: $color-button2-font;
-    font-weight: 600;
-}
 
 .button-center {
     width: 34%;
