@@ -407,6 +407,7 @@ button:focus,
   color: linen;
   font-size: 14px;
   padding: 0.2rem;
+  height: 110px;
 }
 
 .code-link {
