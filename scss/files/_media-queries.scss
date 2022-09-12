@@ -7,10 +7,6 @@
         font-size: 12px;
     }
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
     th {
         border-bottom: $nano solid $color-table-border;
         padding: $nano;
@@ -57,13 +53,11 @@
     }
 }
 
-@media all and (min-width: 400px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+@media all and (min-width: 400px) and (max-width: 780px) {
+    
 
     html {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .fb-about-me {
@@ -79,16 +73,10 @@
     }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 780px) {
     .grid {
-        grid-gap: $small;
+        grid-template-columns: 1fr;
     }
-
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-
     .fb-profile {
         flex-direction: column;
         align-items: center;
@@ -97,38 +85,7 @@
     .profile__portrait {
         width: 60%;
     }
-}
 
-@media all and (min-width: 1200px) {
-    .fb-profile {
-        flex-direction: row;
-        align-items: center;
-        .profile__portrait {
-            margin-left: 15%;
-        }
-        .profile__text {
-            margin-right: 15%;
-        }
-    }
-}
-
-@media all and (min-width: 750px) and (max-width: 900px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .grid2 { 
-
-        grid-template-columns: 1fr;
-
-    }
-
-    html {
-        font-size: 20px;
-    }
-}
-
-@media all and (max-width: 900px) {
     .fb-about-me {
         display: flex;
         flex-wrap: wrap;
@@ -143,9 +100,24 @@
     }
 }
 
-@media all and (min-width: 900px) {
-    html {
-        font-size: 20px;
+@media all and (min-width: 780px) and (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr 1fr; 
     }
-    
+
 }
+
+@media all and (min-width: 1100px) {
+ 
+    .fb-profile {
+        flex-direction: row;
+        align-items: center;
+        .profile__portrait {
+            margin-left: 15%;
+        }
+        .profile__text {
+            margin-right: 15%;
+        }
+    }
+}
+

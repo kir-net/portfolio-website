@@ -4,26 +4,26 @@
 
 .grid { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-content: space-between;
+    grid-gap: 10px; 
 }
     
 .grid__item {
-    
     margin-top: $medium;
     background-color: $color-grid;
     background-color: $color-transparent-background;
 
     h2,
-    p {
-        margin: $tiny;
+    p,
+    tools {
+        margin: $small $small $tiny;
         font-family: "Podkova", serif;
     }        
 }
 
 .grid2 { 
     display: grid;
-   
     grid-template-columns: 1fr;
     grid-gap: $small;
     margin-top: $medium;

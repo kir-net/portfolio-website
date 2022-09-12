@@ -42,7 +42,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -67,6 +67,7 @@ h1 {
 }
 
 h2 {
+  margin: auto;
   font-size: 1.3rem;
   font-weight: 550;
 }
@@ -193,40 +194,40 @@ header {
   0% {
     color: rgb(55, 254, 0);
   }
-  7% {
+  3% {
     color: rgb(55, 254, 0);
   }
-  12.5% {
+  8.5% {
     color: white;
   }
-  18% {
+  14% {
     color: red;
   }
-  32% {
+  28% {
     color: red;
   }
-  37.5% {
+  33.5% {
     color: white;
   }
-  43% {
+  39% {
     color: #fede51;
   }
-  57% {
+  54% {
     color: #fede51;
   }
-  62.5% {
+  58.5% {
     color: white;
   }
-  68% {
+  64% {
     color: #1677fe;
   }
-  82% {
+  78% {
     color: #1677fe;
   }
-  87.5% {
+  83.5% {
     color: white;
   }
-  93% {
+  89% {
     color: rgb(55, 254, 0);
   }
   100% {
@@ -378,6 +379,8 @@ button:focus,
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 10px;
 }
 
 .grid__item {
@@ -386,8 +389,9 @@ button:focus,
   background-color: rgba(255, 255, 255, 0.85);
 }
 .grid__item h2,
-.grid__item p {
-  margin: 0.2rem;
+.grid__item p,
+.grid__item tools {
+  margin: 0.6rem 0.6rem 0.2rem;
   font-family: "Podkova", serif;
 }
 
@@ -527,10 +531,6 @@ footer .fb-footer__rightitem:hover {
     font-size: 12px;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   th {
     border-bottom: 0.05rem solid #357b70;
     padding: 0.05rem;
@@ -570,13 +570,9 @@ footer .fb-footer__rightitem:hover {
     margin-left: 3%;
   }
 }
-@media all and (min-width: 400px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
+@media all and (min-width: 400px) and (max-width: 780px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .fb-about-me__item {
@@ -588,14 +584,9 @@ footer .fb-footer__rightitem:hover {
     margin-left: 3%;
   }
 }
-@media all and (max-width: 750px) {
+@media all and (max-width: 780px) {
   .grid {
-    grid-gap: 0.6rem;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto/auto;
-    grid-row: auto/auto;
+    grid-template-columns: 1fr;
   }
 
   .fb-profile {
@@ -606,33 +597,7 @@ footer .fb-footer__rightitem:hover {
   .profile__portrait {
     width: 60%;
   }
-}
-@media all and (min-width: 1200px) {
-  .fb-profile {
-    flex-direction: row;
-    align-items: center;
-  }
-  .fb-profile .profile__portrait {
-    margin-left: 15%;
-  }
-  .fb-profile .profile__text {
-    margin-right: 15%;
-  }
-}
-@media all and (min-width: 750px) and (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
 
-  .grid2 {
-    grid-template-columns: 1fr;
-  }
-
-  html {
-    font-size: 20px;
-  }
-}
-@media all and (max-width: 900px) {
   .fb-about-me {
     display: flex;
     flex-wrap: wrap;
@@ -644,9 +609,21 @@ footer .fb-footer__rightitem:hover {
     font-size: 0.9rem;
   }
 }
-@media all and (min-width: 900px) {
-  html {
-    font-size: 20px;
+@media all and (min-width: 780px) and (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (min-width: 1100px) {
+  .fb-profile {
+    flex-direction: row;
+    align-items: center;
+  }
+  .fb-profile .profile__portrait {
+    margin-left: 15%;
+  }
+  .fb-profile .profile__text {
+    margin-right: 15%;
   }
 }
 
